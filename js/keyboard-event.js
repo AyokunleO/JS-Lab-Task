@@ -10,9 +10,9 @@ function change() {
 // keyup
 const press1 = document.getElementById("press1");
 
-press1.addEventListener("keydown", change);
+press1.addEventListener("keyup", change1);
 
-function change() {
+function change1() {
     press1.style.backgroundColor = "brown";
 }
 
