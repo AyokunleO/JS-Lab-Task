@@ -1,0 +1,50 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Challenge</title>
+</head>
+<body>
+
+    <ul>
+        <li><a href="Challenge.html">Challenge</a></li>
+        <li><a href="keyboard-event.html">Keyboard-event</a></li>
+        <li><a href="mouse-event.html">mouse-event</a></li>
+        <li><a href="username.html">username</a></li>
+    </ul>
+
+    <h1>Lab Task 2</h1>
+    <button id="btn">Would you like to answer some questions?</button>
+    <p id="display"></p>
+
+
+    <script>
+    const btn = document.getElementById("btn");
+
+    btn.addEventListener("click", challenge)
+
+    function challenge() {
+        message = confirm("Is 4 less than 140?")
+        if (message == true) {
+            alert("Not fake news");
+        } else{
+            alert("Try again");
+        }
+        message = confirm("Is 5 greater than 6?")
+        if (message == true) {
+            alert("5 is the greatest");
+        } else{
+            alert("Try again");
+        }
+        message = confirm("Is 3 less than or equal to 3?")
+        if (message == true) {
+            alert("");
+        } else{
+            alert("JavaScript is awesome!");
+        }
+}
+    </script>
+</body>
+</html>
+

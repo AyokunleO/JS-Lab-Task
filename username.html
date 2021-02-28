@@ -1,0 +1,62 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <ul>
+        <li><a href="Challenge.html">Challenge</a></li>
+        <li><a href="keyboard-event.html">Keyboard-event</a></li>
+        <li><a href="mouse-event.html">mouse-event</a></li>
+        <li><a href="username.html">username</a></li>
+    </ul>
+
+
+    <h1>Welcome to my website</h1>
+    <button id="btn">Would you like to enter your username?</button>
+    <p id="display"></p>
+
+    <script>
+        const btn = document.getElementById("btn");
+        const display = document.getElementById("display");
+
+
+        btn.addEventListener("click", userName)
+
+        // function userName() {
+        //     let response = confirm ("Would you like to enter your username?");
+
+        //     if (response == true) {
+        //         let message = prompt("Please enter your username");
+        //         display.innerHTML = ("Welcome " + message);
+        //     }
+        //     else {
+        //         display.innerHTML = "Oops!! Some other time then";
+        //     }
+        // }
+            var message;
+        function userName() {
+            let response = confirm ("Would you like to enter your username?");
+
+            if (response == true) {
+                let message = prompt("Please enter your username");
+                if (message == "Alice") {
+                    display.innerHTML = "Welcome " + message + " good to see you";
+                } else if (message == "Bob"){
+                    display.innerHTML = "Welcome " + message + " good to see you";
+                }
+                else {
+                    display.innerHTML = "Good to see you";
+                }
+            }
+            else {
+                display.innerHTML = "Oops!! Some other time then";
+            }
+
+        } 
+    </script>
+</body>
+</html>

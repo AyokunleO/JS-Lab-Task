@@ -1,0 +1,79 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mouse Events</title>
+</head>
+<body>
+    <ul>
+        <li><a href="Challenge.html">Challenge</a></li>
+        <li><a href="keyboard-event.html">Keyboard-event</a></li>
+        <li><a href="mouse-event.html">mouse-event</a></li>
+        <li><a href="username.html">username</a></li>
+    </ul>
+<!-- Onclick Event -->
+
+    <h1>Wedding Reservation</h1>
+<form action="" id="weddingReservation">
+    <table>
+        <tr>
+            <td><label for="txtName">Name:</label></td>
+            <td><input type="text" id="txtName"></td>
+        </tr>
+        <tr>
+            <td><label for="location">Where are you coming from:</label></td>
+            <td><input type="text" id="location"></td>
+        </tr>
+        <tr>
+            <td><label for="Dependent">Number of Dependents:</label></td>
+            <td><input type="number" id="Dependent"></td>
+        </tr>
+
+    </table>
+</form>
+    <button onclick="show()" id="submit">Click to submit</button>
+    <p style="display: none;" id="success">Submission Successful!</p>
+    <br>
+    <br>
+    <hr>
+
+
+<!-- Doubleclick Event -->
+
+<button ondblclick="show1()" id="Mess">Double Click to get a customized message just for you</button>
+<p style="display: none;" id="disp">We can't wait to have you at our wedding</p>
+<br>
+<br>
+<hr>
+
+
+<!-- Onmousedown Event -->
+
+<button onmousedown="show2()" id="Mess2">Hold me down for a bit, need to check something</button>
+<p style="display: none;" id="disp2">Good! You've got some muscle strength</p>
+<br>
+<br>
+<hr>
+
+<!-- Onmouseover Event -->
+
+<p onmousemove="show3(this)">Hover over me to see what i can become</p>
+<br>
+<br>
+<hr>
+
+<!-- onmouseup Event -->
+<p onmouseup="show4(this)">Move over me to see a magic</p>
+<br>
+<br>
+<hr>
+
+<!-- onmouseout Event -->
+<p onmouseout="show5(this)">Touch and move away!</p>
+
+
+
+    <script src="js/mouse-event.js"></script>
+</body>
+</html>
